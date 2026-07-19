@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script>
+        // Delay GA load until browser is idle (or after a short fallback delay)
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        function loadGA() {
+            if (window.__gaLoaded) return;
+            window.__gaLoaded = true;
+
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-SG6WP4DXBC';
+            s.onload = function () {
+                gtag('js', new Date());
+                gtag('config', 'G-SG6WP4DXBC', { anonymize_ip: true });
+            };
+            document.head.appendChild(s);
+        }
+
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(loadGA, { timeout: 2000 });
+        } else {
+            setTimeout(loadGA, 1500);
+        }
+    </script>
+
+    <script defer src="/assets/js/navbar.js"></script>
+
+    <link rel="preload" href="/assets/page_elements/navbar.html" as="fetch" crossorigin="anonymous">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Reyna Murphy — web developer and designer specializing in responsive UI/UX, accessible design, and modern front-end development. See some of my animation work." />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+        media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" />
+    </noscript>
+
+    <!--CSS Styles -->
+    <link rel="preload" as="style" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/RM_favicon_180x180.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/RM_favicon_32x32.jpg" />
+
+    <title>Reyna Murphy - Education</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <header>
+        <div id="navbar-placeholder"></div>
+    </header>
+
+    <main>
+
+        <section class="education">
+            <h2 class="all-education-title">Education</h2>
+
+            <div class="education-container education-card">
+                <h3 class="education-type-title">Bachelor of Science in Computer Science</h3>
+                <h4>University of Utah</h4>
+                <h5>Graduated May 2025</h5>
+
+                <p class="education-details"><strong>Details</strong></p>
+                <ul>
+                <li>Emphasis in Games</li>
+                <li>Studied web development, software engineering, and game development</li>
+                <li>Worked with HTML, CSS, JavaScript, Django, C#, C++, and Unreal Engine</li>
+                </ul>
+
+                <p><strong>Relevant Skills</strong></p>
+                <p>
+                Web Development, UI/UX, Accessibility, Programming, Game Development
+                </p>
+
+                <p><strong>Relevant Coursework</strong></p>
+                <p>
+                Web Software Development, Game Development, Software Practice, Algorithms
+                </p>
+            </div>
+            </section>
+
+    </main>
+
+    <!-- Footer section -->
+
+  <footer>
+
+  </footer>
+
+    <!-- Website scripts -->
+    <script src="/assets/js/app.js" defer></script>
+  </body>
+</html>

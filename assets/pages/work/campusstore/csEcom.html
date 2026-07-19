@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script>
+        // Delay GA load until browser is idle (or after a short fallback delay)
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        function loadGA() {
+            if (window.__gaLoaded) return;
+            window.__gaLoaded = true;
+
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-SG6WP4DXBC';
+            s.onload = function () {
+                gtag('js', new Date());
+                gtag('config', 'G-SG6WP4DXBC', { anonymize_ip: true });
+            };
+            document.head.appendChild(s);
+        }
+
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(loadGA, { timeout: 2000 });
+        } else {
+            setTimeout(loadGA, 1500);
+        }
+    </script>
+
+    <script defer src="/assets/js/navbar.js"></script>
+
+    <link rel="preload" href="/assets/page_elements/navbar.html" as="fetch" crossorigin="anonymous">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Reyna Murphy — web developer and designer specializing in responsive UI/UX, accessible design, and modern front-end development. See my e-commerce work" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+        media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" />
+    </noscript>
+
+    <!--CSS Styles -->
+    <link rel="preload" as="style" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/RM_favicon_180x180.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/RM_favicon_32x32.jpg" />
+
+    <!-- Preload hero images -->
+      <link rel="preload"
+            as="image"
+            href="/assets/images/work/product_listing_1.webp"
+            imagesrcset="/assets/images/work/product_listing_1.webp"
+            imagesizes="600px"
+            fetchpriority="high">
+
+    <title>Reyna Murphy - Web Development & E-Commerce</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <header>
+        <div id="navbar-placeholder"></div>
+    </header>
+
+        <main>
+            <section class="job-title">
+                <h1>Web Development & E-Commerce Associate</h1>
+                <h2>University of Utah Campus Store</h2>
+                <p class="project-dates">Work Dates: May 2023 - March 2026</p>
+            </section>
+
+            <section class="web-dev-button">
+                <div class="example-button-container webdev">
+                    <a href="/work/campus-store/ui-elements" class="example-button">SEE WEB DEVELOPMENT EXAMPLES</a>
+                </div>
+            </section>
+
+        <!-- PRODUCT LISTING -->
+        <section class="work-ex">
+            <h2>Product Listing Example</h2>
+            <p>
+                For this product I was responsible for writing the title, description, adding and editing provided images, adding size charts, writing a meta page title and meta description, identifying search keywords, adding related items, adding the product to certain commerce categories, and displaying any necessary tags/badges.
+            </p>
+
+            <div class="row">  
+                <div class="column">
+                    <a href="/assets/images/work/product_listing_1.png" target="_blank">
+                        <img src="/assets/images/work/product_listing_1.webp" alt="Title and images of an Under Armour hat" width="600" height="337" style="aspect-ratio:600/337;" fetchpriority="high" decoding="async">
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="/assets/images/work/product_listing_2.png" target="_blank">
+                        <img src="/assets/images/work/product_listing_2.webp" alt="Description and related items of an Under Armour hat" width="600" height="337" loading="lazy" style="aspect-ratio:600/337;" >
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="/assets/images/work/product_listing_3.png" target="_blank">
+                        <img src="/assets/images/work/product_listing_3.webp" alt="Description and related items of an Under Armour hat" width="600" height="337" loading="lazy" style="aspect-ratio:600/337;" >
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- MERCHANDISING -->
+        <section class="work-ex">
+            <h2>Mercandising Examples</h2>
+            <p>
+                For the following pages I was responsible for layout, order, general content. 
+            </p>
+            <p>
+                The left images show the pages on desktop and the right images show the pages on mobile.
+            </p>
+            <div class="row">
+                <div class="column-4">
+                    <a href="/assets/images/work/merchandising_sports_1.png" target="_blank">
+                        <img src="/assets/images/work/merchandising_sports_1.webp" alt="Desktop version of a shop by sport page" width="600" height="337" loading="lazy" >
+                    </a>
+                </div>
+                <div class="column-4">
+                    <a href="/assets/images/work/merchandising_sports_2.png" target="_blank">
+                        <img src="/assets/images/work/merchandising_sports_2.webp" alt="Mobile version of a shop by sport page" width="600" height="338" loading="lazy" >
+                    </a>
+                </div>
+                <div class="column-4">
+                    <a href="/assets/images/work/merchandising_brand_1.png" target="_blank">
+                        <img src="/assets/images/work/merchandising_brand_1.webp" alt="Desktop version of a shop by brand page" width="600" height="338" loading="lazy" >
+                    </a>
+                </div>
+                <div class="column-4">
+                    <a href="/assets/images/work/merchandising_brand_2.png" target="_blank">
+                        <img src="/assets/images/work/merchandising_brand_2.webp" alt="Mobile version of a shop by brand page" width="600" height="337" loading="lazy" >
+                    </a>
+                </div>
+            </div>
+        </section>
+        </main>
+
+    <footer></footer>
+
+    <!-- Website scripts -->
+    <script src="/assets/js/app.js" defer></script>
+
+    </body>
+
+</html>

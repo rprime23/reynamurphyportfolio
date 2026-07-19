@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- Google tag (gtag.js) -->
+        <script>
+            // Delay GA load until browser is idle (or after a short fallback delay)
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+
+            function loadGA() {
+                if (window.__gaLoaded) return;
+                window.__gaLoaded = true;
+
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-SG6WP4DXBC';
+                s.onload = function () {
+                    gtag('js', new Date());
+                    gtag('config', 'G-SG6WP4DXBC', { anonymize_ip: true });
+                };
+                document.head.appendChild(s);
+            }
+
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(loadGA, { timeout: 2000 });
+            } else {
+                setTimeout(loadGA, 1500);
+            }
+        </script>
+
+        <script defer src="/assets/js/navbar.js"></script>
+
+        <link rel="preload" href="/assets/page_elements/navbar.html" as="fetch" crossorigin="anonymous">
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"
+            content="Reyna Murphy — web developer and designer specializing in responsive UI/UX, accessible design, and modern front-end development. See my game project Clay Beats." />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preload" as="style"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+            media="print" onload="this.media='all'" />
+        <noscript>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" />
+        </noscript>
+
+        <!--CSS Styles -->
+        <link rel="preload" as="style" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="/assets/css/styles.css">
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/RM_favicon_180x180.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/RM_favicon_32x32.jpg" />
+
+        <!-- Preload images -->
+          <link rel="preload"
+                as="image"
+                href="/assets/images/Clay_Beats/cb_title.webp"
+                imagesrcset="/assets/images/Clay_Beats/cb_title.webp"
+                imagesizes="1200px"
+                fetchpriority="high">
+          
+          <link rel="preload"
+                as="image"
+                href="/assets/images/Clay_Beats/cb_title_small.webp"
+                media="(max-width: 768px)"
+                fetchpriority="high">
+
+        <title>Reyna Murphy - Clay Beats</title>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+
+        <header>
+            <div id="navbar-placeholder"></div>
+        </header>
+
+        <main>
+            <!-- Large Image -->
+
+            <div class="main-page-image">
+                <img src="/assets/images/Clay_Beats/cb_title.webp" alt="Clay Beats" fetchpriority=high class="main-screen-img" width="1200" height="561" />
+                <h1>Clay Beats</h1>
+                <p class="project-dates">Project Dates: August 2024 - May 2025</p>
+            </div>
+
+            <!-- Description -->
+
+            <div class="project-desc">
+                <p>
+                    Clay Beats is a casual couch co-op rhythm game where two players take on two kindred cats who aim to
+                    become masters of their
+                    craft...pottery! Embark on an adventure, meet new clients, and master your pottery craft.
+                </p>
+                <p>
+                    Clay Beats was created in a studio simulation with a thirty person team. This project was built in
+                    Unreal using Unreal
+                    blueprinting. I contributed to the team as a rhythm systems and multiplayer engineer.
+                </p>
+            </div>
+
+            <p class="cb-link">
+                Play <a href="https://store.steampowered.com/app/3492920/Clay_Beats/" target="_blank">Clay Beats</a> now!
+            </p>
+
+            <!-- Image Grid -->
+
+            <div>
+                <h2 class="projects-title">Images</h2>
+                <div class="row">
+                    <div class="column">
+                        <img src="/assets/images/Clay_Beats/cb_envor.webp" alt="Clay Beats Environment" loading="lazy"
+                            class="main-screen-img" style="width: 100%; height:auto;" width="600" height="338" />
+                    </div>
+                    <div class="column">
+                        <img src="/assets/images/Clay_Beats/cb_envir_otter.webp" alt="Clay Beats Otter Non-Player Character"
+                            loading="lazy" class="main-screen-img" style="width: 100%; height:auto;" width="600" height="338" />
+                    </div>
+                    <div class="column">
+                        <img src="/assets/images/Clay_Beats/cb_corkboard.webp" alt="Clay Beats Song Selection Corkboard"
+                            loading="lazy" class="main-screen-img" style="width: 100%; height:auto;" width="600" height="338" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img src="/assets/images/Clay_Beats/cb_rhythm.webp" alt="Clay Beats Rhythm Gameplay" loading="lazy"
+                            class="main-screen-img" style="width: 100%; height:auto;" width="600" height="299" />
+                    </div>
+                    <div class="column">
+                        <img src="/assets/images/Clay_Beats/cb_rhythm_2.webp" alt="Clay Beats Start of Rhythm Gameplay"
+                            loading="lazy" class="main-screen-img" style="width: 100%; height:auto;" width="600" height="299" />
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <footer></footer>
+
+        <!-- Website scripts -->
+        <script src="/assets/js/app.js" defer></script>
+
+    </body>
+
+</html>

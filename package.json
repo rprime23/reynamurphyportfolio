@@ -1,0 +1,24 @@
+{
+  "name": "rprime23.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "wrangler pages dev ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rprime23/rprime23.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rprime23/rprime23.github.io/issues"
+  },
+  "homepage": "https://github.com/rprime23/rprime23.github.io#readme",
+  "description": "",
+  "devDependencies": {
+    "wrangler": "^4.112.0"
+  }
+}

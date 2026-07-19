@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script>
+        // Delay GA load until browser is idle (or after a short fallback delay)
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        function loadGA() {
+            if (window.__gaLoaded) return;
+            window.__gaLoaded = true;
+
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-SG6WP4DXBC';
+            s.onload = function () {
+                gtag('js', new Date());
+                gtag('config', 'G-SG6WP4DXBC', { anonymize_ip: true });
+            };
+            document.head.appendChild(s);
+        }
+
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(loadGA, { timeout: 2000 });
+        } else {
+            setTimeout(loadGA, 1500);
+        }
+    </script>
+
+    <script defer src="/assets/js/navbar.js"></script>
+
+    <link rel="preload" href="/assets/page_elements/navbar.html" as="fetch" crossorigin="anonymous">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Reyna Murphy — web developer and designer specializing in responsive UI/UX, accessible design, and modern front-end development. See some of my animation work." />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+        media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" />
+    </noscript>
+
+    <!--CSS Styles -->
+    <link rel="preload" as="style" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/RM_favicon_180x180.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/RM_favicon_32x32.jpg" />
+
+    <!-- Preload hero images -->
+    <link rel="preload" as="image" href="/assets/images/Zeus_Wrath/ggLarge.webp"
+        imagesrcset="/assets/images/Zeus_Wrath/ggLarge.webp" imagesizes="100vw" fetchpriority="high">
+
+    <title>Reyna Murphy - Greek Game</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <header>
+        <div id="navbar-placeholder"></div>
+    </header>
+
+        <main>
+            <!-- Large Image -->
+
+        <div class="main-page-image">
+            <img
+                src="/assets/images/Zeus_Wrath/ggLarge.webp"
+                alt="Greek Game"
+                class="main-screen-img"
+                width="2560" height="1487"
+            />
+            <h1>Greek Game</h1>
+            <p class="project-dates">Project Dates: January 2023 - May 2023</p>
+        </div>
+
+        <!-- Description -->
+
+        <div class="project-desc">
+            <p>
+                Greek Game is an alternative style game that attempts to help teach the player the reality that Zeus is actually a bad guy. Taking the player 
+                through and adventure as one of Zeus' warriors who turns against him, the player encounters other caharcters that attempt to teach them 
+                about who Zeus really is.
+            </p>
+            <p>
+                Greek Game was created in an eight person team. This project was built in Gamemaker using Gamemaker's programming language. I worked as primarily 
+                an engineer, but was also a level designer and artist. 
+            </p>
+        </div>
+        
+        <!-- Image Grid -->
+
+        <div>
+            <h2 class="projects-title">Images</h2>
+            <div class="row">
+                <div class="column">
+                    <img
+                    src="/assets/images/Zeus_Wrath/ggEarthRealm.webp"
+                    alt="Greek Game Earth Realm"
+                    loading="lazy"
+                    class="main-screen-img"
+                    style="width: 100%" width="1000" height="565"
+                    />
+                </div>
+                <div class="column">
+                    <img
+                    src="/assets/images/Zeus_Wrath/ggOceanRealm.webp"
+                    alt="Greek Game Ocean Realm"
+                    loading="lazy"
+                    class="main-screen-img"
+                    style="width: 100%" width="1000" height="559"
+                    />
+                </div>
+                <div class="column">
+                    <img
+                    src="/assets/images/Zeus_Wrath/ggSkyRealm.webp"
+                    alt="Greek Game Sky Realm"
+                    loading="lazy"
+                    class="main-screen-img"
+                    style="width: 100%" width="1000" height="563"
+                    />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img
+                    src="/assets/images/Zeus_Wrath/ggPoseidonBossFight.webp"
+                    alt="Greek Game Poseidon Boss Fight"
+                    loading="lazy"
+                    class="main-screen-img"
+                    style="width: 100%" width="1000" height="559"
+                    />
+                </div>
+                <div class="column">
+                    <img
+                    src="/assets/images/Zeus_Wrath/ggZeusBossFight.webp"
+                    alt="Greek Game Zeus Boss Fight"
+                    loading="lazy"
+                    class="main-screen-img"
+                    style="width: 100%" width="1000" height="562"
+                    />
+                </div>
+            </div>
+        </div>
+        </main>
+
+    <footer></footer>
+
+    <!-- Website scripts -->
+    <script src="/assets/js/app.js" defer></script>
+
+    </body>
+
+</html>

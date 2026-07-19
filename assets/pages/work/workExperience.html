@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script>
+    // Delay GA load until browser is idle (or after a short fallback delay)
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+
+    function loadGA() {
+      if (window.__gaLoaded) return;
+      window.__gaLoaded = true;
+
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-SG6WP4DXBC';
+      s.onload = function () {
+        gtag('js', new Date());
+        gtag('config', 'G-SG6WP4DXBC', { anonymize_ip: true });
+      };
+      document.head.appendChild(s);
+    }
+
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadGA, { timeout: 2000 });
+    } else {
+      setTimeout(loadGA, 1500);
+    }
+  </script>
+
+  <script defer src="/assets/js/navbar.js"></script>
+
+  <link rel="preload" href="/assets/page_elements/navbar.html" as="fetch" crossorigin="anonymous">
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Reyna Murphy — web developer and designer specializing in responsive UI/UX, accessible design, and modern front-end development. See some of my animation work." />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+    media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" />
+  </noscript>
+
+  <!--CSS Styles -->
+  <link rel="preload" as="style" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/RM_favicon_180x180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/RM_favicon_32x32.jpg" />
+
+  <title>Reyna Murphy - Work Experience</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+
+  <header>
+    <div id="navbar-placeholder"></div>
+  </header>
+
+  <main>
+    <section class="work">
+      <h2 class="all-work-title">Work Experience</h2>
+
+      <!-- Forvis Mazars -->
+      <div class="work-container work-card">
+        <h3 class="work-type-title">Website Content Maintenance Associate</h3>
+        <h4>Forvis Mazars</h4>
+        <h5>April 2026 - Present</h5>
+        <p class="work-details">
+          <strong>Job Duties</strong>
+        <ul>
+          <li>Created and updated web pages based on content from writers and stakeholders.</li>
+          <li>Managed projects and proofing deadlines.</li>
+          <li>Ensured web content was accessible and aligned with SEO best practices.</li>
+        </ul>
+        </p>
+        <p><strong>Skills</strong></p>
+        <p>
+          User Accessibility, Web Development, SEO Optimization, Task Management, Project Management, Content Maintenance
+        </p>
+        <p><strong>Software Used</strong></p>
+        <p>
+          Kentico, Adobe Workfront
+        </p>
+        <p><strong>Languages and Frameworks</strong></p>
+        <p>
+          HTML, CSS, Bootstrap
+        </p>
+      </div>
+
+      <!-- University of Utah Campus Store-->
+      <div class="work-container work-card">
+        <h3 class="work-type-title">Web Development & E-Commerce Associate</h3>
+        <h4>University of Utah Campus Store</h4>
+        <h5>May 2023 - March 2026</h5>
+        <p class="work-details">
+          <strong>Job Duties</strong>
+        <ul>
+          <li>Designed, developed and maintained web pages, ensuring functionality and alignment with branding
+            guidelines.</li>
+          <li>Created and managed product listings, ensuring accurate descriptions and optimized SEO for improved
+            visibility.</li>
+          <li>Organized and merchandised products, enhancing the customer shopping experience.</li>
+          <li>Helped manage team tasks and responsibilities, ensuring timely completion of projects.</li>
+        </ul>
+        </p>
+        <p><strong>Skills</strong></p>
+        <p>
+          Merchandising, user accessibility, web development, SEO optimization, product listing, task management,
+          project management
+        </p>
+        <p><strong>Software Used</strong></p>
+        <p>
+          Oracle NetSuite, MBS Arc, MBS Insite, Photoshop, Canva, Asana
+        </p>
+        <p><strong>Languages</strong></p>
+        <p>
+          HTML, CSS, JavaScript
+        </p>
+        <!-- <p style="text-align:center;">
+          <a href="/work/campus-store/ecommerce" style="color: var(--bg-color);">See E-Commerce Examples</a>
+        </p>
+        <p style="text-align:center;">
+          <a href="/work/campus-store/ui-elements" style="color: var(--bg-color);">See Web Development Examples</a>
+        </p> -->
+        <div class="example-buttons">
+          <div class="example-button-container ecom">
+            <a href="/work/campus-store/ecommerce" class="example-button">SEE E-COMMERCE EXAMPLES</a>
+          </div>
+
+          <div class="example-button-container webdev">
+            <a href="/work/campus-store/ui-elements" class="example-button">SEE WEB DEVELOPMENT EXAMPLES</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Big 5 Sporting Goods -->
+      <div class="work-container work-card">
+        <h3 class="work-type-title">Retail Sales Associate</h3>
+        <h4>Big 5 Sporting Goods</h4>
+        <h5>July 2021 - June 2023</h5>
+        <p class="work-details">
+          <strong>Job Duties</strong>
+        <ul>
+          <li>Managed inventory, including tracking stock levels and ensuring accuracy.</li>
+          <li>Organized and maintained the backroom for efficient operations.</li>
+          <li>Designed and arranged customer-facing display walls to enhance the shopping experience.</li>
+          <li>Oversaw the processing and integration of new product arrivals.</li>
+        </ul>
+        </p>
+        <p><strong>Skills</strong></p>
+        <p>
+          Organization, on floor merchandising, customer service, cashiering, customer satisfaction, leadership,
+          resposibility
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer></footer>
+
+  <!-- Website scripts -->
+  <script src="/assets/js/app.js" defer></script>
+
+</body>
+
+</html>

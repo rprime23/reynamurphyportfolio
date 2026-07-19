@@ -324,6 +324,14 @@ nav ul {
   min-height: auto;
   align-items: center;
 }
+
+.project-dates {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
 .courses-title,
 footer {
   background-color: var(--bg-color);
